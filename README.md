@@ -1,7 +1,6 @@
-```markdown
 # Urban Service Requests Analysis for Rutgers – New Brunswick
 
-This project leverages data science, machine learning, and time-series forecasting to analyze urban service requests in New Brunswick—home to Rutgers University. By examining open datasets related to waste management, infrastructure, property maintenance, and public safety, we provide actionable insights that help optimize city operations, enhance public safety, and support data-driven urban planning.
+This project leverages data science, machine learning, and time-series forecasting to analyze urban service requests in New Brunswick—home to Rutgers University. By examining open datasets related to waste management, infrastructure, property maintenance, and public safety, our goal is to provide actionable insights for optimizing urban management, reducing costs, and improving public safety.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -15,7 +14,7 @@ This project leverages data science, machine learning, and time-series forecasti
   - [Property Maintenance](#property-maintenance)
   - [Infrastructure & Transportation](#infrastructure--transportation)
   - [Public Safety](#public-safety)
-- [Visualization & Reporting](#visualization--reporting)
+- [Visualizations & Reporting](#visualizations--reporting)
 - [Repository Structure](#repository-structure)
 - [Setup and Usage Instructions](#setup-and-usage-instructions)
 - [Future Enhancements](#future-enhancements)
@@ -23,61 +22,62 @@ This project leverages data science, machine learning, and time-series forecasti
 - [License](#license)
 
 ## Project Overview
-This repository contains code, notebooks, and documentation for a comprehensive analysis of urban service requests in New Brunswick. Our goal is to leverage open data and advanced machine learning techniques—such as Facebook Prophet, ARIMA, XGBoost, and deep learning—to forecast trends, identify anomalies, and derive actionable insights in areas like waste management, infrastructure, property maintenance, and public safety.
+This repository documents a comprehensive analysis of urban service requests in New Brunswick using open data. We apply various machine learning techniques—ranging from traditional statistical models like ARIMA and Facebook Prophet for time-series forecasting to modern approaches like XGBoost and deep learning for classification and anomaly detection. Our insights help city officials and businesses optimize operations in waste management, infrastructure planning, property maintenance, and public safety.
 
 ## Key Features
-- **Data-Driven Urban Analysis:** Integrates open datasets to understand service request trends and seasonal patterns in New Brunswick.
-- **Advanced Forecasting:** Utilizes Facebook Prophet and ARIMA for time-series forecasting of service request volumes.
-- **Predictive Modeling:** Employs XGBoost and deep learning models for classification and anomaly detection.
-- **Interactive Visualizations:** Generates dashboards and static reports that illustrate spatial and temporal trends, helping stakeholders make informed decisions.
-- **Agile Project Structure:** Fully documented and organized to facilitate collaboration and reproducibility.
+- **Data-Driven Analysis:** Integration of open datasets to track service requests across multiple urban domains.
+- **Advanced Forecasting:** Use of Facebook Prophet and ARIMA to forecast trends and seasonal patterns in service requests.
+- **Predictive Modeling:** Application of XGBoost and deep learning models for classification and anomaly detection.
+- **Actionable Insights:** Identification of cost-saving opportunities and efficiency improvements for urban management.
+- **Interactive Visualizations:** Development of dashboards and static reports for clear communication of insights.
+- **Reproducible Research:** A fully documented project with Jupyter Notebooks, scripts, and clear instructions for replication.
 
 ## Methodology
 
 ### Data Collection & Processing
-- **Open Data Sources:** We source urban service requests data from local government and state open data portals. If a dedicated Rutgers – New Brunswick portal isn’t available, alternative city 311 datasets are used as examples.
-- **Data Cleaning:** Raw data is cleaned and preprocessed to handle missing values, standardize categories, and convert dates into usable formats.
-- **Data Integration:** Additional datasets (e.g., weather or demographic data) are merged to enhance our analysis.
+- **Open Data Sources:** We gather urban service request data from local government portals and state open data platforms. If Rutgers – New Brunswick-specific data is unavailable, similar city 311 datasets are used as proxies.
+- **Data Cleaning:** Raw data is processed to handle missing values, standardize formats, and remove duplicates. Geographical information is normalized to map requests accurately.
+- **Data Integration:** Additional data (e.g., weather, demographic statistics) is merged to enrich our analysis and support feature engineering.
 
 ### Exploratory Data Analysis (EDA)
-- **Trend Analysis:** Identify overall volume, seasonal patterns, and anomalies in service requests over time.
-- **Category Breakdown:** Visualize data by service category (e.g., waste management, property maintenance) to pinpoint which issues are most prevalent.
-- **Geospatial Insights:** Map the data to uncover geographic clusters and hotspots of service requests.
+- **Trend Analysis:** Identify overall volume, seasonal cycles, and anomalies in the service requests.
+- **Category Breakdown:** Understand which issues are most prevalent across waste management, property maintenance, infrastructure, and public safety.
+- **Geospatial Mapping:** Visualize service request density by neighborhood to uncover hotspots and patterns.
 
 ### Machine Learning Models
-- **Time-Series Forecasting:**  
-  - **Facebook Prophet:** Captures complex seasonality and holiday effects to forecast future service request volumes.  
-  - **ARIMA:** Provides a classical approach to model and predict trends.
-- **Predictive Classification:**  
-  - **XGBoost:** Classifies request types and detects anomalies using structured features.
-  - **Deep Learning Models:** Utilizes RNNs/LSTMs and text classification networks to capture nonlinear trends and subtle textual cues.
-- **Model Evaluation:** Models are compared using error metrics (e.g., RMSE, MAE) and classification metrics (accuracy, precision, recall).
+- **Time-Series Forecasting:**
+  - *Facebook Prophet:* Models complex seasonal effects and holiday impacts, providing easy-to-interpret forecasts.
+  - *ARIMA:* Offers a classical statistical approach for time-series prediction.
+- **Predictive Classification & Anomaly Detection:**
+  - *XGBoost:* A robust algorithm used for classification tasks (e.g., categorizing request types) and anomaly detection.
+  - *Deep Learning:* Employs RNNs/LSTMs and text-based neural networks to capture nonlinear relationships and subtle trends in the data.
+- **Model Evaluation:** Each model is evaluated using standard metrics (RMSE, MAE, accuracy, precision, recall) and compared to select the best approach for each task.
 
 ## Urban Impact Analysis
 
 ### Waste Management
-- **Key Insights:** Analysis of bulk pickups and illegal setouts reveals seasonal spikes (e.g., May surges linked to student move-outs).
-- **Impact:** Forecasts suggest optimized scheduling could reduce costs by 15–20%.
+- **Insight:** Bulk waste pickups and illegal setout requests peak seasonally (e.g., in May due to student move-outs).
+- **Impact:** Optimized scheduling based on our forecasts can reduce operational costs by 15–20%.
 
 ### Property Maintenance
-- **Key Insights:** Seasonal spikes in property maintenance requests (e.g., overgrown grass in spring/summer) are identified.
-- **Impact:** Enables businesses to adjust staffing and marketing strategies accordingly.
+- **Insight:** Requests for property maintenance (e.g., overgrown grass, building repairs) spike in spring and summer.
+- **Impact:** Local businesses and city agencies can adjust staffing and resource allocation based on seasonal demand.
 
 ### Infrastructure & Transportation
-- **Key Insights:** Pothole reports and parking violations increase in colder months due to freeze-thaw cycles.
-- **Impact:** Forecasts aid in proactive resource allocation and maintenance scheduling.
+- **Insight:** Pothole reports and parking violation complaints increase during colder months due to weather-related road damage.
+- **Impact:** Forecasts enable proactive maintenance planning, reducing repair costs and improving road safety.
 
 ### Public Safety
-- **Key Insights:** Patterns in emergency and social service requests help predict community needs.
-- **Impact:** Forecasting supports faster, more efficient resource allocation for public safety.
+- **Insight:** Non-emergency public safety requests, including noise complaints and social service calls, exhibit clear temporal trends.
+- **Impact:** Better forecasting supports efficient resource allocation, ensuring timely responses to community needs.
 
-## Visualization & Reporting
-- **Interactive Dashboards:** Explore data through dynamic maps and time-series visualizations.
-- **Static Reports:** Detailed notebooks and exported PDFs summarize findings, trends, and model performance.
-- **Geographical Mapping:** Visualize hotspots and distribution of service requests across New Brunswick.
+## Visualizations & Reporting
+- **Interactive Dashboards:** Explore geospatial and temporal trends through dynamic maps and time-series visualizations.
+- **Static Reports:** Detailed Jupyter Notebooks and exported PDFs summarize the analysis, model performance, and key insights.
+- **Geographical Mapping:** Heatmaps and choropleth maps help visualize hotspots and density of service requests.
 
-## Repository Structure
-```
+
+
 ├── README.md
 ├── data/
 │   ├── raw/                # Raw data files (or instructions to download data)
