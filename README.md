@@ -1,4 +1,4 @@
-# Urban Service Requests Analysis for Rutgers – New Brunswick
+# Urban Service Requests Analysis for Rutgers – New Brunswick 
 
 This project leverages data science, machine learning, and time-series forecasting to analyze urban service requests in New Brunswick—home to Rutgers University. By examining open datasets related to waste management, infrastructure, property maintenance, and public safety, our goal is to provide actionable insights for optimizing urban management, reducing costs, and improving public safety.
 
